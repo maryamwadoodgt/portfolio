@@ -20,42 +20,55 @@ const skillGroups = [
 ];
 
 // Short strip shown under the hero text
-const heroSkillStrip = ["React", "TypeScript", "Figma", "Django", "Firebase"];
+const heroSkillStrip = ["React", "TypeScript", "SQL", "Firebase", "Figma"];
 
 const projects = [
   {
-    title: "Project Title One",
+    title: "Medication App",
     description: "One or two sentences on what this project does and the problem it solves.",
-    tags: ["React", "Firebase"],
+    tags: ["TypeScript", "Figma"],
     link: "#",
   },
   {
-    title: "Project Title Two",
+    title: "Empathy Bytes App",
+    description: "One or two sentences on what this project does and the problem it solves.",
+    tags: ["React Native", "JavaScript"],
+    link: "#",
+  },
+  {
+    title: "EPLI Website",
+    description: "One or two sentences on what this project does and the problem it solves.",
+    tags: ["Tableau", "UI/UX"],
+    link: "#",
+  },
+  {
+    title: "Forklore",
     description: "One or two sentences on what this project does and the problem it solves.",
     tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
-    title: "Project Title Three",
+    title: "ClassQ",
     description: "One or two sentences on what this project does and the problem it solves.",
-    tags: ["Swift", "SwiftUI"],
+    tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
-    title: "Project Title Four",
+    title: "iOS Reminders App",
     description: "One or two sentences on what this project does and the problem it solves.",
-    tags: ["Python", "Django", "SQL"],
+    tags: ["Swift", "SwiftUI", "Firebase"],
     link: "#",
   },
 ];
 
 const classes = [
   { code: "CS 1332", name: "Data Structures & Algorithms", tag: "Core" },
+  { code: "CS 2110", name: "Computer Organization & Programming", tag: "Core" },
+  { code: "CS 2200", name: "Systems & Networks", tag: "Core" },
   { code: "CS 2340", name: "Objects & Design", tag: "Software Eng" },
-  { code: "CS 3510", name: "Design & Analysis of Algorithms", tag: "Core" },
-  { code: "CS 3600", name: "Introduction to Artificial Intelligence", tag: "AI" },
+  { code: "CS 3451", name: "Computer Graphics", tag: "Media" },
+  { code: "CS 3751", name: "Introduction to User Interface Design", tag: "Design" },
   { code: "CS 4400", name: "Introduction to Database Systems", tag: "Data" },
-  { code: "CS 4460", name: "Information Visualization", tag: "Design" },
 ];
 
 /* ============================================
@@ -125,11 +138,10 @@ function typeHeroCode() {
   const codeEl = document.getElementById("typedCode");
   const cursor = document.getElementById("cursor");
   const snippet = `const student = {
-  name: "Your Name",
+  name: "Maryam Wadood",
   school: "Georgia Tech",
   major: "Computer Science",
-  focus: ["frontend", "UI/UX design"],
-  currentlyBuilding: "this portfolio"
+  concentrations: ["information internetworks", "media"]
 };`;
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
