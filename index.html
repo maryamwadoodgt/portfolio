@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — Computer Science student at Georgia Tech, focused on web development, frontend, and UI/UX design." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV: styled like editor tabs ===== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="dot"></span> yourname<span class="brand-ext">.dev</span>
+      </div>
+      <nav class="nav-tabs" aria-label="Primary">
+        <a href="#about" class="tab active" data-tab="about">about<span class="ext">.js</span></a>
+        <a href="#projects" class="tab" data-tab="projects">projects<span class="ext">.js</span></a>
+        <a href="#classes" class="tab" data-tab="classes">classes<span class="ext">.js</span></a>
+        <a href="#contact" class="tab" data-tab="contact">contact<span class="ext">.js</span></a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO / ABOUT ===== -->
+    <section id="about" class="section hero">
+      <div class="hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">// computer science @ georgia tech</p>
+          <h1>Hi, I'm <span class="accent">Your Name</span>.</h1>
+          <p class="lead">
+            I'm a CS student who likes building things people actually enjoy using —
+            equal parts <strong>frontend engineer</strong> and <strong>UI/UX designer</strong>.
+            I've shipped websites, apps, and Figma projects, and I care as much about
+            how something looks as how it works.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <ul class="skill-strip" id="skillStrip" aria-label="Core skills">
+            <!-- populated by script.js -->
+          </ul>
+        </div>
+
+        <div class="hero-terminal reveal" aria-hidden="false">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="tdot red"></span><span class="tdot yellow"></span><span class="tdot green"></span>
+              <span class="terminal-title">about-me.js</span>
+            </div>
+            <pre class="terminal-body"><code id="typedCode"></code><span class="cursor" id="cursor">&nbsp;</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills">
+      <p class="section-label">01 · toolbox</p>
+      <h2 class="reveal">What I build with</h2>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- populated by script.js -->
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section projects">
+      <p class="section-label">02 · projects</p>
+      <h2 class="reveal">Selected work</h2>
+      <p class="section-sub reveal">A few things I've designed and built. Swap these out with your own in <code>js/script.js</code>.</p>
+      <div class="project-grid" id="projectGrid">
+        <!-- populated by script.js -->
+      </div>
+    </section>
+
+    <!-- ===== CLASSES ===== -->
+    <section id="classes" class="section classes">
+      <p class="section-label">03 · coursework</p>
+      <h2 class="reveal">Relevant classes</h2>
+      <p class="section-sub reveal">Georgia Tech coursework that shaped how I think about software and design.</p>
+      <div class="class-list" id="classList">
+        <!-- populated by script.js -->
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <div class="contact-card reveal">
+        <p class="section-label light">04 · contact</p>
+        <h2>Let's build something.</h2>
+        <p class="section-sub light">
+          I'm always open to new opportunities, collaborations, or just talking shop about design and code.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:youremail@gatech.edu" class="contact-link">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">youremail@gatech.edu</span>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/yourprofile</span>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/yourusername</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
