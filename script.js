@@ -24,38 +24,38 @@ const heroSkillStrip = ["React", "TypeScript", "SQL", "Firebase", "Figma"];
 
 const projects = [
   {
-    title: "Medication App",
-    description: "One or two sentences on what this project does and the problem it solves.",
+    title: "Navia",
+    description: "A medication management platform designed to help seniors and caregivers stay on top of prescriptions, medical history, and doctor visits. I co-founded the project and helped build features like AI-powered medication explanation and a simplified, accessible user experience.",
     tags: ["TypeScript", "Figma"],
     link: "#",
   },
   {
     title: "Empathy Bytes App",
-    description: "One or two sentences on what this project does and the problem it solves.",
+    description: "A campus-wide scavenger hunt app that helps new students explore Georgia Tech in a more engaging way. As a team lead, I helped shape the app's direction, coordinated development efforts, and worked on bringing interactive experiences and digital artifacts into the game.",
     tags: ["React Native", "JavaScript"],
     link: "#",
   },
   {
     title: "EPLI Website",
-    description: "One or two sentences on what this project does and the problem it solves.",
+    description: "A website and interactive dashboard created for the Emergency Pediatric Lifeline Initiative. The project combines web design and data visualization to make pediatric emergency readiness data easier to explore and understand.",
     tags: ["Tableau", "UI/UX"],
     link: "#",
   },
   {
     title: "Forklore",
-    description: "One or two sentences on what this project does and the problem it solves.",
+    description: "A cookbook app concept that reimagines cooking as a more interactive digital experience. I designed the wireframes and user flow in Figma, focusing on making recipe discovery feel intuitive and enjoyable.",
     tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
     title: "ClassQ",
-    description: "One or two sentences on what this project does and the problem it solves.",
+    description: "A classroom management app designed during my internship at GTRI to help teachers streamline student check-ins and check-outs. I worked on the UI/UX design process, creating and refining screens based on feedback from researchers and stakeholders.",
     tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
     title: "iOS Reminders App",
-    description: "One or two sentences on what this project does and the problem it solves.",
+    description: "A clone of Apple's Reminders app built with Swift and Firebase. This project helped me learn iOS development fundamentals, backend integration, and collaborative development using Git.",
     tags: ["Swift", "SwiftUI", "Firebase"],
     link: "#",
   },
@@ -66,9 +66,11 @@ const classes = [
   { code: "CS 2110", name: "Computer Organization & Programming", tag: "Core" },
   { code: "CS 2200", name: "Systems & Networks", tag: "Core" },
   { code: "CS 2340", name: "Objects & Design", tag: "Software Eng" },
+  { code: "CS 3251", name: "Introduction to Computer Networks", tag: "Core" },
   { code: "CS 3451", name: "Computer Graphics", tag: "Media" },
   { code: "CS 3751", name: "Introduction to User Interface Design", tag: "Design" },
   { code: "CS 4400", name: "Introduction to Database Systems", tag: "Data" },
+  { code: "CS 4460", name: "Introduction to Information Visualization", tag: "Media" },
 ];
 
 /* ============================================
